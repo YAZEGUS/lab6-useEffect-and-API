@@ -119,7 +119,7 @@ body {
 }
 
 .rating {
-  margin-top: auto; /* Притискаємо до низу картки */
+  margin-top: auto;
   font-weight: bold;
   color: #ffd700;
 }
