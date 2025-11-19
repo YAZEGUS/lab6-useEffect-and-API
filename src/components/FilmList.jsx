@@ -11,7 +11,6 @@ function FilmList() {
   const fetchFilms = async () => {
     try {
       setLoading(true);
-      // Використовуємо стабільне дзеркало API (оригінал іноді "лягає")
       const response = await fetch('https://ghibliapi.vercel.app/films');
       
       if (!response.ok) {
@@ -30,7 +29,6 @@ function FilmList() {
     fetchFilms();
   }, []);
 
-  // 4. Умовний рендерінг (Loading / Error)
   if (loading) return <div className="status-message">⏳ Завантаження шедеврів...</div>;
   if (error) return <div className="status-message error">❌ Помилка: {error}</div>;
 
