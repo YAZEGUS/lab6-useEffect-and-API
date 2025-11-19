@@ -1,16 +1,31 @@
-# React + Vite
+# Лабораторна робота №6: useEffect та запити до API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Опис проєкту
+Цей React-застосунок демонструє роботу з асинхронними запитами до зовнішнього API. Проєкт завантажує список аніме-фільмів легендарної **Studio Ghibli**, обробляє стани завантаження та помилок, і відображає отримані дані у вигляді стильної галереї.
 
-Currently, two official plugins are available:
+### Реалізований варіант (Варіант №4)
+> "Отримати список фільмів із Studio Ghibli API та відобразити назви й опис."
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Функціонал
+1.  **API Request:** Використання `fetch` всередині хука `useEffect` для отримання даних при першому рендері.
+2.  **State Management:** Керування трьома станами інтерфейсу:
+    * ⏳ **Loading:** Показ індикатора завантаження.
+    * ✅ **Data:** Відображення списку фільмів (картки з постерами, описом, роком випуску та рейтингом).
+    * ❌ **Error:** Обробка помилок мережі або API та виведення повідомлення користувачу.
+3.  **UI/UX:** Адаптивна верстка (Grid Layout) та темна тема оформлення.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧱 Структура компонентів
 
-## Expanding the ESLint configuration
+* **`src/components/FilmList.jsx`** — Розумний компонент. Містить логіку запиту (`fetch`), обробку помилок (`try...catch`) та керування станом.
+* **`src/components/FilmCard.jsx`** — Презентаційний компонент. Відповідає виключно за візуалізацію однієї картки фільму. Отримує дані через `props`.
+* **`src/components/Header.jsx`** — Статичний компонент заголовка сторінки.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📷 Скріншоти роботи
+
+*(Тут буде місце для скріншоту твого готового сайту)*
+
+---
