@@ -26,6 +26,8 @@
 
 ## 📷 Скріншоти роботи
 
-*(Тут буде місце для скріншоту твого готового сайту)*
+<img width="1918" height="935" alt="image" src="https://github.com/user-attachments/assets/9ecab55d-d5fe-4b55-b60f-d9f3591cf3d6" />
+
+<img width="1914" height="937" alt="image" src="https://github.com/user-attachments/assets/e24b0d8c-3fc1-4879-bd0b-2e52e74bc74c" />
 
 ---
